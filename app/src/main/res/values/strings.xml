@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Social-Network-Android</string>
+    <string name="Phone_Number">Phone Number</string>
+    <string name="Auth_Code">Auth Code</string>
+    <string name="arrow_forward">Arrow Forward</string>
 </resources>
