@@ -5,7 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import treegex.android.social_network_android.ui.screens.auth.AuthCode
-import treegex.android.social_network_android.ui.screens.auth.InputPhoneNumber
+import treegex.android.social_network_android.ui.screens.auth.phone.InputPhoneNumber
 
 @Composable
 fun Navigation(

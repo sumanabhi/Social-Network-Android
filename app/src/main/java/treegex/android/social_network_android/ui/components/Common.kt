@@ -2,6 +2,7 @@ package treegex.android.social_network_android.ui.components
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -20,16 +21,14 @@ import treegex.android.social_network_android.R
 import treegex.android.social_network_android.ui.theme.Blue_400
 
 @Composable
-fun GoButton(navController: NavController, route: String) {
+fun GoButton(onClick: () -> Unit, navController: NavController) {
     Row(
         modifier = Modifier
             .padding(20.dp)
             .fillMaxWidth(),
         horizontalArrangement = Arrangement.End,
     ) {
-        Button(colors = ButtonDefaults.outlinedButtonColors(Blue_400), onClick = {
-            navController.navigate(route = route)
-        }) {
+        Button(colors = ButtonDefaults.outlinedButtonColors(Blue_400), onClick = onClick) {
             Image(
                 painter = painterResource(id = R.drawable.ic_arrow_forward),
                 contentDescription = stringResource(id = R.string.arrow_forward)

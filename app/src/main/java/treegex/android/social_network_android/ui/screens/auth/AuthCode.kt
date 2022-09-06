@@ -22,9 +22,12 @@ fun AuthCode(navController: NavController) {
         verticalArrangement = Arrangement.Center
     ) {
         EditText(code, R.string.Auth_Code)
-        GoButton(navController = navController, route = NavigationScreen.AuthCode.route)
-    }
+        GoButton(navController = navController, onClick = {
 
+            navController.navigate(route = NavigationScreen.AuthCode.route)
+
+        })
+    }
 }
 
 
